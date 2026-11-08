@@ -18,37 +18,29 @@ public class errors {
 
         driver.get("https://automation.co.il/tutorials/selenium/demo1/indexID.html");
 //        שאלה 1
-  //בדית שגיאה
-//        driver.findElement(By.id("firstname")).sendKeys("sari");
-//
-//        driver.findElement(By.id("lastname")).sendKeys("!!");
-//
-//        driver.findElement(By.id("email")).sendKeys("!!rerr");
-//
-//
-//        driver.findElement(By.id("next")).click();
-//
-//        String arr1 =driver.findElement(By.id("lastname-error")).getText();
-//        if (arr1.equals("Please enter at least 3 characters.")){
-//            System.out.println("ההודעה תקינה");
-//        }
-//        else {
-//            System.out.println("ההודעה לא תקינה");      }
-//
-//        String arr2 =driver.findElement(By.id("email-error")).getText();
-//        if (arr2.equals("Please enter a valid email address.")){
-//            System.out.println("ההודעה תקינה");
-//        }
-//        else {
-//            System.out.println("ההודעה לא תקינה");      }
-//
-//
+  //בדיקה שגיאה
+        driver.findElement(By.id("firstname")).sendKeys("sari");
+
+        driver.findElement(By.id("lastname")).sendKeys("!!");
+
+        driver.findElement(By.id("email")).sendKeys("!!rerr");
 
 
+        driver.findElement(By.id("next")).click();
 
+        String arr1 =driver.findElement(By.id("lastname-error")).getText();
+        if (arr1.equals("Please enter at least 3 characters.")){
+            System.out.println("ההודעה תקינה");
+        }
+        else {
+            System.out.println("ההודעה לא תקינה");      }
 
-
-
+        String arr2 =driver.findElement(By.id("email-error")).getText();
+        if (arr2.equals("Please enter a valid email address.")){
+            System.out.println("ההודעה תקינה");
+        }
+        else {
+            System.out.println("ההודעה לא תקינה");      }
 
 
 //        שאלה 2
@@ -60,13 +52,13 @@ public class errors {
 
         driver.findElement(By.id("next")).click();
 
-//        String tab2 =driver.findElement(By.className("moving-tab")).getText();
-//
-//        if (tab2.equals("Account")){
-//            System.out.println("שגיאה");
-//        }
-//        else {
-//            System.out.println(" הגעתה לטאב 2");      }
+        String tab2 =driver.findElement(By.className("moving-tab")).getText();
+
+        if (tab2.equals("Account")){
+            System.out.println("שגיאה");
+        }
+        else {
+            System.out.println(" הגעתה לטאב 2");      }
         //        בשביל שהתוכנה תסגר לאחר 5 שניות
 //        Thread.sleep(3000);
 
@@ -94,7 +86,7 @@ public class errors {
         String mesgreen=driver.findElement(By.className("cta-title")).getText();
 
         if (mesgreen.equals("הטופס הזה הוא רק טופס דוגמה")){
-            System.out.println("כל הכבוד הצלחת להריץ את התרגיל ");
+            System.out.println("כל הכבוד הצלחת להריץ את כל התרגיל ");
         }
         else {
             System.out.println("חבל נסה שנית ");      }
